@@ -1,0 +1,13 @@
+Convert boolean values to strings 'Yes' or 'No'
+
+function boolToWord( bool ){
+  if (bool) {
+    return 'Yes';
+  } else {
+    return 'No';
+  }
+}
+or
+function boolToWord( bool ){
+  return bool ? 'Yes': 'No';
+}
