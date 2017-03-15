@@ -37,5 +37,6 @@ function squareDigits(num){
     holder.push(splitter[i] * splitter[i])
   }
   let final = holder.join('');
-  return parseInt(final)
+  return parseInt(final);
+
 }
