@@ -27,3 +27,15 @@ function findOdd(A) {
   }
   return arrayHolder[0]
 }
+
+Square Every Digit
+
+function squareDigits(num){
+  let holder = [];
+  let splitter = num.toString().split('');
+  for(let i = 0; i < splitter.length; i++){
+    holder.push(splitter[i] * splitter[i])
+  }
+  let final = holder.join('');
+  return parseInt(final)
+}
