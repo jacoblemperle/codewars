@@ -40,3 +40,24 @@ function squareDigits(num){
   return parseInt(final);
 
 }
+
+Playing With Digits
+
+function digPow(n, p){
+console.log(n, p)
+let increment = p;
+let theNumber;
+let fNumber = 0;
+  let numbers = (n).toString(10).split("").map(function(t){return parseInt(t)})
+  console.log(numbers)
+  for(var i = 0; i < numbers.length; i++){
+    fNumber += Math.pow(numbers[i], p)
+    p++
+  }
+  if(Number.isInteger((fNumber / n) % 1)){
+    theNumber = fNumber / n
+  } else {
+    return -1
+  }
+  return theNumber
+}
