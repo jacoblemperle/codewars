@@ -61,3 +61,19 @@ let fNumber = 0;
   }
   return theNumber
 }
+
+Find the odd int
+
+function findOdd(A) {
+ var counter = 1;
+  var arrayHolder = A.sort(function(a, b){
+    return a - b
+  });
+  for(var i = 0; i < arrayHolder.length; i++){
+    if(arrayHolder[i] === arrayHolder[i + 1]){
+      arrayHolder.splice(i, 2)
+      i--
+    }
+  }
+  return arrayHolder[0]
+}
